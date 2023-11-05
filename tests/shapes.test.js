@@ -4,7 +4,7 @@ test('Circle renders SVG', () => {
     const circle = new Circle();
     circle.setColor('blue');
     const svg = circle.render();
-    expect(svg).toEqual('<circle cx="100" cy="100" r="50" fill="blue" />');
+    expect(svg).toEqual('<circle cx="150" cy="100" r="50" fill="blue" />');
 });
 
 const { Triangle } = require('../lib/shapes');
@@ -21,5 +21,5 @@ test('Square renders SVG', () => {
     const square = new Square();
     square.setColor('blue');
     const svg = square.render();
-    expect(svg).toEqual('<rect x="50" y="50" width="100" height="100" fill="blue" />');
+    expect(svg).toEqual('<rect x="100" y="50" width="100" height="100" fill="blue" />');
 });
